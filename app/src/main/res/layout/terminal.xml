@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/terminal_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/vr_color"
+        android:orientation="horizontal" />
+
+    <include
+        android:id="@+id/terminal_btns"
+        layout="@layout/term_btns" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/vr_color"
+        android:orientation="horizontal" />
+
+    <include layout="@layout/insert_btns" />
+
+    <TextView
+        android:id="@+id/directory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/insert_btn_bg"
+        android:padding="5dp"
+        android:scrollHorizontally="true"
+        android:text=".../"
+        android:textDirection="ltr" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/vr_color"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textDirection="ltr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="5dp"
+                android:breakStrategy="high_quality"
+                android:clickable="true"
+                android:gravity="start"
+                android:scrollHorizontally="true"
+                android:text=""
+                android:textDirection="ltr"
+                android:textIsSelectable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cursor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text=" $ "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:background="@android:color/transparent"
+                    android:breakStrategy="high_quality"
+                    android:focusable="true"
+                    android:gravity="center|start"
+                    android:imeOptions="actionSend"
+                    android:inputType="text|textNoSuggestions"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

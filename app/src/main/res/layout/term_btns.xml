@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="8">
+
+    <ImageView
+        android:id="@+id/termTrans"
+        android:layout_width="@dimen/ed_btn_width"
+        android:layout_height="@dimen/ed_btn_height"
+        android:layout_margin="@dimen/ed_btn_margin"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="termBtn"
+        android:src="@drawable/send" />
+
+    <ImageView
+        android:id="@+id/termClear"
+        android:layout_width="@dimen/ed_btn_width"
+        android:layout_height="@dimen/ed_btn_height"
+        android:layout_margin="@dimen/ed_btn_margin"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="termBtn"
+        android:src="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/termForward"
+        android:layout_width="@dimen/ed_btn_width"
+        android:layout_height="@dimen/ed_btn_height"
+        android:layout_margin="@dimen/ed_btn_margin"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="termBtn"
+        android:src="@drawable/termdown" />
+
+    <ImageView
+        android:id="@+id/termBackward"
+        android:layout_width="@dimen/ed_btn_width"
+        android:layout_height="@dimen/ed_btn_height"
+        android:layout_margin="@dimen/ed_btn_margin"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="termBtn"
+        android:src="@drawable/termup" />
+
+    <ImageView
+        android:id="@+id/termZoomIn"
+        android:layout_width="@dimen/ed_btn_width"
+        android:layout_height="@dimen/ed_btn_height"
+        android:layout_margin="@dimen/ed_btn_margin"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="termBtn"
+        android:src="@drawable/zoomin" />
+
+    <ImageView
+        android:id="@+id/termZoomOut"
+        android:layout_width="@dimen/ed_btn_width"
+        android:layout_height="@dimen/ed_btn_height"
+        android:layout_margin="@dimen/ed_btn_margin"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="termBtn"
+        android:src="@drawable/zoomout" />
+
+    <ImageView
+        android:id="@+id/termDarkMode"
+        android:layout_width="@dimen/ed_btn_width"
+        android:layout_height="@dimen/ed_btn_height"
+        android:layout_margin="@dimen/ed_btn_margin"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="termBtn"
+        android:src="@drawable/ic_baseline_wb_sunny_24" />
+
+</LinearLayout>

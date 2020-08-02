@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/set_layout_margin"
+        android:background="@color/about_bg6"
+        android:orientation="horizontal"
+        android:padding="@dimen/set_layout_padding">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Clear Commands History"
+            android:textColor="@color/set_item_color"
+            android:textSize="@dimen/set_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:onClick="clear_history"
+            android:text="OK" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkblue"
+        android:orientation="horizontal"
+        android:weightSum="100" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/set_layout_margin"
+        android:background="@color/about_bg6"
+        android:onClick="about"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/set_layout_padding">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_description"
+            android:textColor="@color/set_item_color"
+            android:textSize="@dimen/set_text_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
